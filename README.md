@@ -26,4 +26,26 @@ options:
 -v        : enable verification for the clusters
 -h        : show this help page
 ```
+### Some examples:
+#### The original mesh
+<img src="img/block.png" alt="" width="600" />
+
+#### Uniform remeshing
+<img src="img/block-iso.png" alt="" width="600" />
+
+#### Adaptive remeshing
+<img src="img/block-adapt.png" alt="" width="600" />
+
+#### Adaptive remeshing with anisotrophic metric
+<img src="img/block-aniso.png" alt="" width="600" />
+
+#### Adaptive remeshing with anisotrophic metric + quadric based placement policy
+<img src="img/block-vp.png" alt="" width="600" />
+
+#### Uniform remeshing for the dragon model
+<img src="img/dragon-iso.png" alt="" width="600" />
+
+#### Adaptive remeshing with anisotrophic metric + quadric based placement policy for the dragon model
+<img src="img/dragon-vp.png" alt="" width="600" />
+
 
