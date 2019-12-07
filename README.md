@@ -9,8 +9,6 @@ make
 
 ### How to Run:
 
-#### To run Voronoi Diagrams (Vertex Clustering):
-
 ```
 ./final_proj voronoi [options] <inputfile_name> 
 ```
