@@ -1,6 +1,6 @@
 ### Introduction
 
-This tool takes a 3d mesh an an input and compresses it into another 3d mesh such that the outputed mesh will use much less triangles while keeps the shape of the original mesh. The algorithm is based on Voronoi Diagram. Some code is from other repositories, what I mainly worked on are `vertexClustering.cpp` (the implementation of Voronoi Diagram based Clustering) and `VCFrontEnd.cpp` (a simply parser for parsing the command line arguments).
+This tool takes a 3d mesh an an input and compresses it into another 3d mesh such that the outputed mesh will use much less triangles while keeps the shape of the original mesh. The algorithm is based on Voronoi Diagram. Some code is from other repositories. What I mainly worked on are `vertexClustering.cpp` (the implementation of Voronoi Diagram based Clustering) and `VCFrontEnd.cpp` (a simply parser for parsing the command line arguments).
 
 [ref](https://hal.archives-ouvertes.fr/hal-00534535/document)
 
