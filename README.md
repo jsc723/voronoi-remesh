@@ -1,3 +1,9 @@
+### Introduction
+
+This tool takes a 3d mesh an an input and compresses it into another 3d mesh such that the outputed mesh will use much less triangles while keeps the shape of the original mesh. The algorithm is based on Voronoi Diagram.
+
+[ref](https://hal.archives-ouvertes.fr/hal-00534535/document)
+
 ### How to Build:
 
 ```
