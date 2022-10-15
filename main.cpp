@@ -20,6 +20,9 @@ int main(int argc,char* argv[]){
 	}else if(string(argv[1]) == "meshInterpolate"){
 		cout << "not supported in this open source version" << endl;
 	}
+	else {
+		cout << "unknown command: " << argv[1] << endl;
+	}
 
 
 

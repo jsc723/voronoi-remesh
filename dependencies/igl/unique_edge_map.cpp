@@ -31,7 +31,7 @@ IGL_INLINE void igl::unique_edge_map(
   // This is 2x faster to create than a map from pairs to lists of edges and 5x
   // faster to access (actually access is probably assympotically faster O(1)
   // vs. O(log m)
-  Matrix<typename DerivedEMAP::Scalar,Dynamic,1> IA;
+  Eigen::Matrix< typename DerivedEMAP::Scalar, Dynamic,1 > IA;
   unique_simplices(E,uE,IA,EMAP);
   uE2E.resize(uE.rows());
   // This does help a little

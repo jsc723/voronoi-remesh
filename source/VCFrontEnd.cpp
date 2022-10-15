@@ -48,7 +48,7 @@ int VCFrontEnd::exec(int argc, char** argv) {
 		MeshSimplify *ms = new MeshSimplify();
 		FILE *_;
 		_ = freopen(in_str.c_str(), "r", stdin);
-    _ = freopen(out_str.c_str(), "w", stdout);
+		_ = freopen(out_str.c_str(), "w", stdout);
 		ms->setRatio(input.getFloatArg("-ratio", 0.1));
 		ms->input();
 		ms->start();
