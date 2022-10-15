@@ -2,9 +2,21 @@
 
 This tool takes a 3d mesh as input and compresses it into another 3d mesh such that the outputed mesh will use much less triangles while keeps the shape of the original mesh. The algorithm is based on Voronoi Diagram. Some code is from other repositories. What I mainly worked on are `vertexClustering.cpp` (the implementation of Voronoi Diagram based Clustering) and `VCFrontEnd.cpp` (a simply parser for parsing the command line arguments).
 
-[ref](https://hal.archives-ouvertes.fr/hal-00534535/document)
+### Reference
 
-### How to Build:
+[1] [Approximated Centroidal Voronoi Diagrams for Uniform Polygonal Mesh Coarsening](https://hal.archives-ouvertes.fr/hal-00534535/document)
+
+[2] [Surface Simplification Using Quadric Error Metrics](https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf)
+
+[3] [Recent Advances in Remeshing of Surfaces](http://www.cs.technion.ac.il/~gotsman/AmendedPubl/Pierre/remeshing_survey.pdf)
+
+[4] [Anisotropy](https://www.iue.tuwien.ac.at/phd/wessner/node13.html)
+
+### Report
+
+[final project report](https://184meshproj.weebly.com/)
+
+### Build
 
 ```
 mkdir build
@@ -13,13 +25,14 @@ cmake ..
 make
 ```
 
-### How to Run:
+### Run
 
 ```
 ./final_proj voronoi [options] <inputfile_name> 
 ```
 
-options:
+#### options
+
 ```
 -n INT    : set the number of clusters, default 400
 -f PATH   : set the name of the output file, a default name will be generated if not provided
@@ -32,7 +45,7 @@ options:
 -v        : enable verification for the clusters
 -h        : show this help page
 ```
-### Some examples:
+### Some examples
 #### The original mesh
 <img src="img/block.png" alt="" width="600" />
 
@@ -53,5 +66,4 @@ options:
 
 #### Adaptive remeshing with anisotrophic metric + quadric based placement policy for the dragon model
 <img src="img/dragon-vp.png" alt="" width="600" />
-
 
