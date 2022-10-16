@@ -40,7 +40,7 @@ make
 
 Example
 ```
-./final_proj voronoi -n 1000 -o3 -v models/dragon.obj
+./final_proj voronoi -n 1000 -o3 models/dragon.obj
 ```
 
 #### options
