@@ -35,12 +35,12 @@ make
 ### Run
 
 ```
-./final_proj voronoi [options] <inputfile_name> 
+./remesh.exe [options] <inputfile_name> 
 ```
 
 Example
 ```
-./final_proj voronoi -n 1000 -o3 models/dragon.obj
+./remesh.exe -n 1000 -o3 models/dragon.obj
 ```
 
 #### options
