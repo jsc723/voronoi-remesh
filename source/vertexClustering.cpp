@@ -63,7 +63,7 @@ VCFace::VCFace(int v1, int v2, int v3, VertexGroup* vg, VCCluster* c)
 
 /*---------------- VCCluster ---------------*/
 
-VCCluster::VCCluster(int id):id(id), area(0), isNull(false)
+VCCluster::VCCluster(int id):id(id), area(0), isNull(false), weightedSum(0,0,0)
 {
 	E.setZero();
 }
@@ -367,6 +367,9 @@ void VertexClustering::input(const string& filePath)
 			cntv++;
 			double x, y, z;
 			sscanf(s, "%c%lf%lf%lf", &_, &x, &y, &z);
+			if (x != x || y != y || z != z) {
+				cout << "warning: nan vertex in input" << endl;
+			}
 			vGroup->addVertex(Vertex(x, y, z));
 			break;
 		}
